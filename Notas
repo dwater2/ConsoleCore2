@@ -1,0 +1,12 @@
+Comandos:
+- dotnet run
+- dotnet watch run
+
+Criando Solution:
+- dotnet new sln -n GameTOP
+Adicionando os projetos na Solution:
+- dotnet add .\GameTOP\GameTOP.csproj reference .\GameTOP.Lib\GameTOP.Lib.csproj
+- dotnet sln .\GameTOP.sln add .\GameTOP\GameTOP.csproj .\GameTOP.Lib\GameTOP.Lib.csproj
+- dotnet add .\GameTOP\GameTOP.csproj reference .\GameTOP.Interface\GameTOP.Interface.csproj
+- dotnet sln .\GameTOP.sln add .\GameTOP.Interface\GameTOP.Interface.csproj
+- dotnet add .\GameTOP.Lib\GameTOP.Lib.csproj reference .\GameTOP.Interface\GameTOP.Interface.csproj 
